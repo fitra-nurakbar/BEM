@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset css from meyerweb -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <!-- my css style -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ubuntu -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>BEM | Block Element Modifier</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1 class="navbar__logo">Logo</h1>
+      <ul class="navbar__list">
+        <li class="navbar__item--active navbar__item--hover">
+          <a class="navbar__link" href="#">Home</a>
+        </li>
+        <li class="navbar__item navbar__item--hover">
+          <a class="navbar__link" href="#skills">Skills</a>
+        </li>
+        <li class="navbar__item navbar__item--hover">
+          <a class="navbar__link" href="#contact">Contact US</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Slideshow -->
+    <div class="slideshow__container">
+      <div class="slideshow__item fade">
+        <div class="slideshow__image">
+          <div class="text">TEXT ONE</div>
+        </div>
+      </div>
+      <div class="slideshow__item fade">
+        <div class="slideshow__image">
+          <div class="text">TEXT TWO</div>
+        </div>
+      </div>
+      <div class="slideshow__item fade">
+        <div class="slideshow__image">
+          <div class="text">TEXT TREE</div>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- Skills Section -->
+    <section class="skills__container" id="skills">
+      <h2 class="skills__title">Skills</h2>
+      <div class="skills__wraper">
+        <div class="skills__card">
+          <img class="skills__image" src="./img/javascript.png" />
+          <h3 class="skills__card--title">JavaScript</h3>
+          <p class="skills__card--category">Programing Language</p>
+        </div>
+        <div class="skills__card">
+          <img class="skills__image" src="./img/react.png" />
+          <h3 class="skills__card--title">ReactJS</h3>
+          <p class="skills__card--category">Programing Language</p>
+        </div>
+        <div class="skills__card">
+          <img class="skills__image" src="./img/webpack.png" />
+          <h3 class="skills__card--title">Webpack</h3>
+          <p class="skills__card--category">Programing Language</p>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="contact__container" id="contact">
+      <h2 class="contact__title">Contact</h2>
+      <div class="contact__wraper">
+        <div class="contact__card">
+          <a
+            href="https://github.com/fitra-nurakbar"
+            target="_blank"
+            class="contact__icon"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="contact__card">
+          <a
+            href="https://www.instagram.com/fit.tra_"
+            target="_blank"
+            class="contact__icon"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <div class="contact__card">
+          <a
+            href="https://wa.me/+6289630958735"
+            class="contact__icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__copyright">Copyright © 2022</p>
+    </footer>
+    <!-- My Script -->
+    <script src="./scripts/script.js"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/8c72697a52.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
